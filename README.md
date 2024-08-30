@@ -32,10 +32,10 @@ Setting Up the Client
 
 Project endpoints:
    /https://jsonplaceholder.typicode.com/
-   /users     get  request
-   /users     post request
-   /users/:id put request
-   /users/:id delete request
+   get  request  /users     
+   post request  /users     
+   put request   /users/:id 
+   delete request  /users/:id 
 
 
 Conclusion
