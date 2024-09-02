@@ -1,97 +1,156 @@
-
-.main-div{
-  width: fit-content;
-  margin: auto;
-  /* border: 2px solid black; */
-  height:420px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
-}
-.pages-div{
+/*navbar*/
+.navbar {
+  background-color: grey;
+  padding: 15px 20px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.pages-div button{
-  margin: 5px;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th{
-  background-color: rgb(197, 122, 0);
-  color: white;
-  font-weight: bold;   
-}
-td{
-  background-color: rgb(199, 236, 241);
-  /* color: white; */
-  /* font-weight: bold; */
-}
-th,td{
-  padding: 5px;
+  justify-content: center;
   align-items: center;
-  width: 200px;
-  text-align: center;
-}
-button{
-  cursor: pointer;
-  padding: 0 5px;
-  margin: 2px;
-}
-.actions-btn button{
-  width: 45%;
- 
-}
-input{
-  padding: 2px;
-  width: 180px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.pagination{
+.navbar-title {
+  color: white;
+  font-size: 24px;
   font-weight: bold;
-  border: none;
-  padding: 0 10px;
+  text-decoration: none;
 }
 
-/* popup-css */
+.navbar-title:hover {
+  color: #ddd;
+}
+/*navbar*/
+
+/*table*/
+
+/* App.css */
+.main-div {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: left;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.actions-btn button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions-btn button:hover {
+  opacity: 0.8;
+}
+
+.pagination {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Styling for the popup form */
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 9998; 
-}
-.store-add-div{
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 350px;
-  height: 450px;
-  padding: 25px 0;
-  background: white;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  /* display: none; */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-.store-add-div >  form{
-  display: flex;
-  flex-direction: column;
+.store-add-div {
+  width:35%;
+  position: fixed;
+  /* border: 2px solid red; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
 }
-.store-add-div >  form input{
-  width: 280px;
-  padding: 5px;
-  margin-bottom: 10px;
+
+.store-add-div input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
+
+.store-add-div button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.store-add-div button:hover {
+  background-color: #45a049;
+}
+
+.store-add-div h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 
 /* Responsive Styles */
 
